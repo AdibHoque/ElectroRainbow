@@ -12,7 +12,7 @@ from discord import Game, Embed, Color, Status, ChannelType
 import dbl
 import logging
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('e!'))
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('er!'))
 bot.remove_command("help")
 
 async def status_task():
@@ -83,7 +83,9 @@ async def ping(ctx):
     t2 = time.perf_counter()
     await bot.say("Pong! {}ms".format(round((t2-t1)*1000)))
 
-
+@bot.command(pass_context = True)
+async def help(ctx):
+	
 	
 @bot.command(pass_context=True)
 @commands.check(is_owner)
