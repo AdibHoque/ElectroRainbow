@@ -85,7 +85,7 @@ async def ping(ctx):
 
 @bot.command(pass_context = True)
 async def help(ctx):
-	
+	await bot.say('u pool there is no command except ping')
 	
 @bot.command(pass_context=True)
 @commands.check(is_owner)
