@@ -17,11 +17,11 @@ bot.remove_command("help")
 
 async def status_task():
     while True:
-        await bot.change_presence(game=discord.Game(name='for e!help', url='https://twitch.tv/myname', type=1))
+        await bot.change_presence(game=discord.Game(name='Made with love by @ADIB HOQUE#6969', url='https://twitch.tv/myname', type=1))
         await asyncio.sleep(5)
-        await bot.change_presence(game=discord.Game(name='with '+str(len(set(bot.get_all_members())))+' users', url='https://twitch.tv/myname', type=1))
+        await bot.change_presence(game=discord.Game(name='Upvote my bro ELECTRO', url='https://twitch.tv/myname', type=1))
         await asyncio.sleep(5)
-        await bot.change_presence(game=discord.Game(name='in '+str(len(bot.servers))+' servers', url='https://twitch.tv/myname', type=1))
+        await bot.change_presence(game=discord.Game(name='Add ELECTRO in your server', url='https://twitch.tv/myname', type=1))
         await asyncio.sleep(5)
         
 async def rgb_task():
