@@ -31,7 +31,7 @@ async def rgb_task():
     	await asyncio.sleep(2)
     	await bot.edit_role(role, colour=discord.Colour(0x11806a))
     	await asyncio.sleep(2)
-    	await bot.edit_role(rgb_list,colour=discord.Colour(0x2ecc71))
+    	await bot.edit_role(role,colour=discord.Colour(0x2ecc71))
     	await asyncio.sleep(2)
     	await bot.edit_role(role, colour=discord.Colour(0x1f8b4c))
     	await asyncio.sleep(2)
