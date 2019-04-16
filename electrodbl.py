@@ -7,6 +7,7 @@ import datetime
 import json
 import os
 import time
+from discord.ext import commands
 
 bot = commands.Bot
 bot.remove_command("help")
