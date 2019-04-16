@@ -30,4 +30,4 @@ async def on_server_remove(server):
     async with aiohttp.ClientSession() as aioclient:
             await aioclient.post(url, data=payload, headers=headers)
 
-bot.run(os.getenv.token)
+bot.run(os.getenv('Token'))
