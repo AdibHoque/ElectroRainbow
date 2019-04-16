@@ -15,16 +15,19 @@ dbltoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUxMDQ5MTI0MzE1NTgxNjQ
 url = "https://discordbots.org/api/bots/510491243155816449/stats"
 headers = {"Authorization" : dbltoken}
 
+@bot.event
 async def on_ready():
     payload = {"server_count"  : len(bot.servers)}
     async with aiohttp.ClientSession() as aioclient:
             await aioclient.post(url, data=payload, headers=headers)
 
+@bot.event            
 async def on_server_join(server):
     payload = {"server_count"  : len(bot.servers)}
     async with aiohttp.ClientSession() as aioclient:
             await aioclient.post(url, data=payload, headers=headers)
 
+@bot.event       
 async def on_server_remove(server):
     payload = {"server_count"  : len(bot.servers)}
     async with aiohttp.ClientSession() as aioclient:
